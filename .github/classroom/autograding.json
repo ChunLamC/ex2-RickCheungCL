@@ -3,7 +3,7 @@
     {
       "name": "pytest",
       "setup": "sudo -H pip3 install pytest",
-      "run": "pytest",
+      "run": "pip install torch,pip install numpy,pytest",
       "input": "",
       "output": "",
       "comparison": "exact",
