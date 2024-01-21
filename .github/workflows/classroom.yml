@@ -17,18 +17,3 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: education/autograding@v1
-
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: ${{ matrix.python-version }}
-
-      - name: Install dependencies
-        run: |
-          pip install numpy
-          pip install torch
-
-      - name: Run tests
-        run: python python numeric_derivation_test.py
-        run: python python rmse_test.py
-        run: python python tensor_multiplication_test.py
